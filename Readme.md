@@ -1,9 +1,9 @@
 # MCD
 This repo contains Pytorch implementation of MCD.  
 ## Environments
-torch 1.10.2+cu113. python 3.7.9. tensorboardx 2.4. tensorboard 2.6.0
+torch 1.12.0+cu113. python 3.7.13. 
 ## Datasets
-Beer Reviews: We use the dataset provided by RNP, please download it [here](http://people.csail.mit.edu/taolei/beer/). Then place it in the ./data/beer directory.  
+Beer: We use the dataset provided by RNP, please download it [here](http://people.csail.mit.edu/taolei/beer/). Then place it in the ./data/beer directory.  
 
 Word embedding: We use [glove.6B.100d.txt](https://nlp.stanford.edu/projects/glove/). Then put it in the ./data/hotel/embeddings directory.
 
