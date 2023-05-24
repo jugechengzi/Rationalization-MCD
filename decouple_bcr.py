@@ -16,9 +16,8 @@ from tensorboardX import SummaryWriter
 
 
 def parse():
-    #默认： nonorm, dis_lr=1, data=beer, save=0
     parser = argparse.ArgumentParser(
-        description="SR")
+        description="")
     # pretrained embeddings
     parser.add_argument('--embedding_dir',
                         type=str,
@@ -75,7 +74,7 @@ def parse():
                         help='save model, 0:do not save, 1:save')
     parser.add_argument('--gen_sparse',
                         type=int,
-                        default=0,
+                        default=1,
                         help='save model, 0:do not save, 1:save')
     parser.add_argument('--div',
                         type=str,
@@ -135,11 +134,11 @@ def parse():
                         help='compliment learning rate [default: 1e-3]')
     parser.add_argument('--sparsity_lambda',
                         type=float,
-                        default=12.,
+                        default=6.,
                         help='Sparsity trade-off [default: 1.]')
     parser.add_argument('--continuity_lambda',
                         type=float,
-                        default=10.,
+                        default=6.,
                         help='Continuity trade-off [default: 4.]')
     parser.add_argument(
         '--sparsity_percentage',
