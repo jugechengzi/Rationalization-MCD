@@ -10,7 +10,7 @@ from embedding import get_embeddings,get_glove_embedding
 from torch.utils.data import DataLoader
 
 from model import GenEncNoShareModel,Sp_norm_model
-from train_util import train_decouple_causal,train_decouple_causal2
+from train_util import train_decouple_causal2
 from validate_util import validate_share, validate_dev_sentence, validate_annotation_sentence, validate_rationales
 from tensorboardX import SummaryWriter
 
@@ -68,14 +68,8 @@ def parse():
                         type=int,
                         default=0,
                         help='save model, 0:do not save, 1:save')
-    parser.add_argument('--gen_acc',
-                        type=int,
-                        default=0,
-                        help='save model, 0:do not save, 1:save')
-    parser.add_argument('--gen_sparse',
-                        type=int,
-                        default=1,
-                        help='save model, 0:do not save, 1:save')
+
+
     parser.add_argument('--div',
                         type=str,
                         default='kl',
@@ -150,16 +144,6 @@ def parse():
         type=float,
         default=0.9,
         help='lambda for classification loss')
-    parser.add_argument(
-        '--div_lambda',
-        type=float,
-        default=1,
-        help='lambda for js divergence')
-    parser.add_argument(
-        '--x_lambda',
-        type=float,
-        default=1,
-        help='lambda for full text')
     parser.add_argument('--gpu',
                         type=str,
                         default='0',
@@ -241,11 +225,8 @@ annotation_loader = DataLoader(annotation_data, batch_size=args.batch_size)
 # load model
 ######################
 writer=SummaryWriter(args.writer)
-if args.model_type=='sp':
-    model=Sp_norm_model(args)
-else:
-    model=GenEncNoShareModel(args)
-model.to(device)
+
+model=Sp_norm_model(args)
 
 ######################
 # Training
@@ -263,10 +244,7 @@ for p in model.cls.parameters():
 for p in model.cls_fc.parameters():
     if p.requires_grad==True:
         p_para.append(p)
-if args.model_type!='sp':
-    for p in model.layernorm2.parameters():
-        if p.requires_grad==True:
-            p_para.append(p)
+
 
 # print('g_para={}'.format(g_para))
 # print('p_para={}'.format(p_para))
