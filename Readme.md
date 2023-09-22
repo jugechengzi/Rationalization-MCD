@@ -1,9 +1,9 @@
 # MCD
-This repo contains Pytorch implementation of MCD.  Most of our codes are based on our baseline FR.
+This repo contains Pytorch implementation of MCD.  Most of our codes are built on top of our baseline FR.
 ## Environments
 torch 1.13.1+cu11.6. python 3.7.16. 
 ## Datasets
-Beer Reviews: We use the dataset provided by RNP, please download it [here](http://people.csail.mit.edu/taolei/beer/). Then place it in the ./data/beer directory.  
+Beer: We use the dataset provided by RNP, please download it [here](http://people.csail.mit.edu/taolei/beer/). Then place it in the ./data/beer directory.  
 
 Word embedding: We use [glove.6B.100d.txt](https://nlp.stanford.edu/projects/glove/). Then put it in the ./data/hotel/embeddings directory.
 
