@@ -5,9 +5,7 @@ torch 1.13.1+cu11.6.
 python 3.7.16.   
 RTX3090  
 ## Datasets
-Beer: We use the dataset provided by RNP, please download it [here](http://people.csail.mit.edu/taolei/beer/). Then place it in the ./data/beer directory.  
-
-Word embedding: We use [glove.6B.100d.txt](https://nlp.stanford.edu/projects/glove/). Then put it in the ./data/hotel/embeddings directory.
+Please refer to [FR](https://github.com/jugechengzi/FR).  
 
 ## Running example
 ### correlated Beer (Table 2)   
