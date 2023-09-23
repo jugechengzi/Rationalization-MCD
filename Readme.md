@@ -1,7 +1,9 @@
 # MCD
 This repo contains Pytorch implementation of MCD (NeurIPS 2023 paper: D-Separation for Causal Self-Explanation).  Most of our code are built on top of our previous work FR.
 ## Environments
-torch 1.13.1+cu11.6. python 3.7.16. 
+torch 1.13.1+cu11.6.  
+python 3.7.16.   
+RTX3090  
 ## Datasets
 Beer: We use the dataset provided by RNP, please download it [here](http://people.csail.mit.edu/taolei/beer/). Then place it in the ./data/beer directory.  
 
