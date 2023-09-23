@@ -346,12 +346,3 @@ print(best_all)
 print(acc_best_dev)
 print(best_dev_epoch)
 print(f1_best_dev)
-if args.save==1:
-    if args.data_type=='beer':
-        torch.save(model.state_dict(),'./trained_model/beer/aspect{}_dis{}.pkl'.format(args.aspect,args.dis_lr))
-        print('save the model')
-    elif args.data_type=='hotel':
-        torch.save(model.state_dict(), './trained_model/hotel/aspect{}_dis{}.pkl'.format(args.aspect, args.dis_lr))
-        print('save the model')
-else:
-    print('not save')
