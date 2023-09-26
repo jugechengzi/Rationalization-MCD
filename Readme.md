@@ -13,7 +13,9 @@ Please refer to [FR](https://github.com/jugechengzi/FR).
 For the appearance aspect with sparsity being about 20%, run:   
 python -u decouple_bcr.py --correlated 1 --data_type beer --lr 0.0001 --batch_size 128 --gpu 0 --sparsity_percentage 0.175 --epochs 150 --aspect 0
 
-If you have any other questions, please send me an email. I am happy to provide further help if you star this repo.
+If you have any other questions, please send me an email. I am happy to provide further help if you star this repo.  
+Preparing the code is really tedious, please star it before cloning this repo.
+
 
 
 ## Result
