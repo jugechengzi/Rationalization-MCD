@@ -1,5 +1,5 @@
 # MCD
-This repo contains Pytorch implementation of MCD (NeurIPS 2023 paper: [D-Separation for Causal Self-Explanation](https://github.com/jugechengzi/Rationalization-MCD/blob/main/arxiv.pdf)).  Most of our code are built on top of our previous work FR.
+This repo contains Pytorch implementation of MCD (NeurIPS 2023 paper: [D-Separation for Causal Self-Explanation](https://arxiv.org/abs/2309.13391)).  Most of our code are built on top of our previous work FR.
 ## Environments
 torch 1.13.1+cu11.6.  
 python 3.7.16.   
