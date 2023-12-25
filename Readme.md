@@ -25,3 +25,6 @@ Please refer to [FR](https://github.com/jugechengzi/FR).
 
 
 
+## Acknowledgement
+
+The code is largely based on [Car](https://github.com/code-terminator/classwise_rationale) and [DMR](https://github.com/kochsnow/distribution-matching-rationality). Most of the hyperparameters (e.g. the '--cls_lambda'=0.9) are also from them. We are grateful for their open source code.
