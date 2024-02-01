@@ -1,7 +1,7 @@
 
 
 **update in 2024.0201: We apologize that the previous version had some minor bugs that didn't work straight away, we fixed them:**  
-"from model import GenEncNoShareModel": We do not use GenEncNoShareModel. Just delete it.
+"from model import GenEncNoShareModel": We do not use GenEncNoShareModel in our final version. Just delete it.
 
 if args.model_type!='sp':  
   for idx,p in model.layernorm2.named_parameters():  
