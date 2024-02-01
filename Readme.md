@@ -8,7 +8,7 @@ if args.model_type!='sp':
     if p.requires_grad == True:  
       name3.append(idx)  
       p.requires_grad = False  
-: This is in train_util.py. we also do not use it, just delete it.  
+: This is in train_util.py. We also do not use it, just delete it.  
 
 
 
