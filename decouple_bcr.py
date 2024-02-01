@@ -104,7 +104,7 @@ def parse():
                         help='Number of predicted classes [default: 2]')
     parser.add_argument('--model_type',
                         type=str,
-                        default='noshare',
+                        default='sp',
                         help='Number of predicted classes [default: 2]')
 
     # ckpt parameters
