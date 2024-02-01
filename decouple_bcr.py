@@ -9,7 +9,7 @@ from hotel import HotelData,HotelAnnotation
 from embedding import get_embeddings,get_glove_embedding
 from torch.utils.data import DataLoader
 
-from model import GenEncNoShareModel,Sp_norm_model
+from model import Sp_norm_model
 from train_util import train_decouple_causal2
 from validate_util import validate_share, validate_dev_sentence, validate_annotation_sentence, validate_rationales
 from tensorboardX import SummaryWriter
