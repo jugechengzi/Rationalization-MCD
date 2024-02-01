@@ -11,6 +11,8 @@ if args.model_type!='sp':
 : This is in train_util.py. We also do not use it, just delete it.  
 
 
+Due to different versions of torch, you may need to replace "cls_loss = args.cls_lambda * F.cross_entropy(forward_logit, labels)" with "cls_loss = args.cls_lambda * F.cross_entropy(forward_logit, labels.long())"
+
 
 
 # MCD
