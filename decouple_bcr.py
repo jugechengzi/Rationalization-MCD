@@ -227,6 +227,7 @@ annotation_loader = DataLoader(annotation_data, batch_size=args.batch_size)
 writer=SummaryWriter(args.writer)
 
 model=Sp_norm_model(args)
+model.to(device)
 
 ######################
 # Training
