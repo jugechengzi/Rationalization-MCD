@@ -1,14 +1,6 @@
 
 
-**update in 2024.0201: We apologize that the previous version had some minor bugs that didn't work straight away, we fixed them:**  
-"from model import GenEncNoShareModel": We do not use GenEncNoShareModel in our final version. Just delete it.
 
-if args.model_type!='sp':  
-  for idx,p in model.layernorm2.named_parameters():  
-    if p.requires_grad == True:  
-      name3.append(idx)  
-      p.requires_grad = False  
-: This is in train_util.py. We also do not use it, just delete it.  
 
 
 Due to different versions of torch, you may need to replace "cls_loss = args.cls_lambda * F.cross_entropy(forward_logit, labels)" with "cls_loss = args.cls_lambda * F.cross_entropy(forward_logit, labels.long())"
