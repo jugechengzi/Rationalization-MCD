@@ -15,6 +15,9 @@ You can also refer to our team's other complementary work in this series：[FR (
 **If the code has any bugs, please open an issue. We will be grateful for your help.**
 
 
+I am happy to say that a recent paper called [SSR](https://arxiv.org/abs/2403.07955) has taken our previous work [FR](https://github.com/jugechengzi/FR) as a backbone. Congratulations on the great work of Yue et.al. and thanks for their citation. I also find that several recent works, such as [GR](https://ojs.aaai.org/index.php/AAAI/article/download/29783/31352) and [YOFO](https://arxiv.org/abs/2311.02344), have designed their experiments based on our open source code. Congratulations to all of them and I am really happy to know that my work is helping others.
+
+
 
 ## Environments
 torch 1.13.1+cu11.6.  
